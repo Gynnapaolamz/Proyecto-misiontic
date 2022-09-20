@@ -1,4 +1,5 @@
 beans\Reserva.class
-servlet\PruebaServlet.class
+servlets\PruebaServlet.class
+beans\Glamping.class
 beans\Usuario.class
-beans\Hospedaje.class
+connection\DBConnection.class
