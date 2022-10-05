@@ -6,9 +6,10 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class OperacionesBD {
+    
     public static void main(String[] args) {
         
-        actualizarGlamping(2, "Casa del Arbol");
+        actualizarGlamping(2, "CASAAA");
         listadoGlamping();
         
     }

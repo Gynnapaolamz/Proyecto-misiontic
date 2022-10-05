@@ -18,6 +18,10 @@ public class Reserva {
         this.fecha_salida = fecha_salida;
     }
 
+    public Reserva(int id_glamping, String nombre, Date fechaAlquiler, boolean estado, String ubicacion) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public int getId_reserva() {
         return id_reserva;
     }
