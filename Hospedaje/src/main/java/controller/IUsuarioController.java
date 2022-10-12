@@ -7,13 +7,13 @@ public interface IUsuarioController {
     public String login(String username, String contrasena);
 
     public String register(String username, String contrasena,
-            String nombre, String apellido, String email, String telefono, double saldo);
+            String nombre, String apellido, String email, String telefono, double saldo, boolean premium);
 
     public String pedir(String username);
 
     public String modificar(String username, String nuevaContrasena,
             String nuevoNombre, String nuevosApellido, String nuevoEmail, String nuevoTelefono,
-            double nuevoSaldo);
+            double nuevoSaldo, boolean nuevoPremium);
 
     public String verCantidadHospedaje(String username);
 

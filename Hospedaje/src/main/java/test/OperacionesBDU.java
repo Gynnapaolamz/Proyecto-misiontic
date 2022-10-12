@@ -43,8 +43,9 @@ public class OperacionesBDU {
               String email = rs.getString("email");
               String telefono = rs.getString("telefono");
               double saldo = rs.getDouble("saldo");
+              boolean premium = rs.getBoolean("premium");
               
-              Usuario usuario = new Usuario(username,contrasena,nombre,apellido,email,telefono,saldo);
+              Usuario usuario = new Usuario(username,contrasena,nombre,apellido,email,telefono,saldo,premium);
                System.out.println(usuario.toString());
                       
            }

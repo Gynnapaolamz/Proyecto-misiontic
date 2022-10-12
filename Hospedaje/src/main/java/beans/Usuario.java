@@ -8,8 +8,9 @@ public class Usuario {
     private String email;
     private String telefono;
     private double saldo;
+    private boolean premium;
 
-    public Usuario(String username, String contrasena, String nombre, String apellido, String email, String  telefono, double saldo) {
+    public Usuario(String username, String contrasena, String nombre, String apellido, String email, String telefono, double saldo, boolean premium) {
         this.username = username;
         this.contrasena = contrasena;
         this.nombre = nombre;
@@ -17,6 +18,7 @@ public class Usuario {
         this.email = email;
         this.telefono = telefono;
         this.saldo = saldo;
+        this.premium = premium;
     }
 
     public String getUsername() {
@@ -59,11 +61,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public String  getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(String  telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -75,11 +77,19 @@ public class Usuario {
         this.saldo = saldo;
     }
 
+    public boolean isPremium() {
+        return premium;
+    }
+
+    public void setPremium(boolean premium) {
+        this.premium = premium;
+    }
+
     @Override
     public String toString() {
-        return "Usuario{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", telefono=" + telefono + ", saldo=" + saldo + '}';
+        return "Usuario{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", telefono=" + telefono + ", saldo=" + saldo + ", premium=" + premium + '}';
     }
     
     
-    
+
 }

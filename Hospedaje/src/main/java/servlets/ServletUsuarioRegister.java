@@ -40,8 +40,9 @@ package servlets;
 			String email = request.getParameter("email");
                         String telefono = request.getParameter("telefono");
 			double saldo = Double.parseDouble(request.getParameter("saldo"));
+                        boolean premium = Boolean.parseBoolean(request.getParameter("premium"));
 			
-			String result = usuario.register(username, contrasena, nombre, apellido, email, telefono, saldo);
+			String result = usuario.register(username, contrasena, nombre, apellido, email, telefono, saldo, premium);
 			
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out = response.getWriter();

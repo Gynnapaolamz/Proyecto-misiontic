@@ -41,10 +41,11 @@ public class ServletUsuarioModificar extends HttpServlet {
 		String email = request.getParameter("email");
                 String telefono = request.getParameter("telefono");
 		double saldo = Double.parseDouble(request.getParameter("saldo"));
+                boolean premium = Boolean.parseBoolean(request.getParameter("premium"));
 		
 		
 		String usuarioStr = usuario.modificar(username,contrasena,nombre,apellido,
-                        email, telefono, saldo);
+                        email, telefono, saldo,premium);
 		
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
