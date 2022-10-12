@@ -21,8 +21,8 @@
               crossorigin="anonymous" />
 
         <script src="js/main.js"></script>
-        <link rel="stylesheet" href="css/main.css" />
-        <title>Inicio</title>
+        <link rel="stylesheet" href="css/main.css" />        
+        <title>Contacto</title>
     </head>
     <body>
         <header>
@@ -47,31 +47,36 @@
                 </li>
             </ul>
         </header>
+        <!-- formulario contacto -->
+        <div class="container">
+            <form class="row g-3">
+                <div class="container-fluid" style="justify-content: center;">
+                <h3>Contacto</h3>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
 
-        <!-- <a id="salir-btn" class="dropdown-item" href="index.html">Salir</a>-->
-        <main class="p-4 d-flex justify-content-center">
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col" id="ordenar-genero" data-toogle="tooltip" 
-                            data-placement="top" title="Ordenar por género"> Ubicacion
-                            <span class="fas fa-sort" id="icono-ordenar"></span></th>
-                        <th scope="col">Descripcio</th>
-                        <th scope="col">Valor/th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Estado</th>                        
-                        <th scope="col">Reservar</th>
-                    </tr>
-                </thead>
-                <tbody id="glamping-tbody">
-
-                </tbody>
-            </table>
-        </main>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Nombre">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Ciudad">
+                </div>
+                 <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Telefono">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
         <!-- Remove the container if you want to extend the Footer to full width. -->
-        <div class="container my-5">
+        <div class="container-fluid">
             <!-- Footer -->
             <footer class="text-center text-lg-start text-dark">
                 <!-- Section: Social media -->
@@ -209,6 +214,6 @@
                 <!-- Copyright -->
             </footer>
             <!-- Footer -->
-        </div>         
+        </div>
     </body>
 </html>

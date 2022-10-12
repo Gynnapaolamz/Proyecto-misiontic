@@ -1,3 +1,7 @@
+.nav-item{
+    text-decoration: none;
+    
+}
 .bg-login-image{
     background: url("../img/login.jpg");
     background-position: center;
